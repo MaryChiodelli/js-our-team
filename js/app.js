@@ -31,4 +31,13 @@ const team = [
     }
 ];
 
-console.log(team);
+for (let i = 0; i < team.length; i++) {
+    const teamMember = team[i];
+    const name = teamMember.name;
+    const role = teamMember.role;
+    const image = teamMember.image;
+
+    console.log(name, role, image);
+}
+
+// console.log(team);
