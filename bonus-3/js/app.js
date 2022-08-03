@@ -1,4 +1,4 @@
-const bodyEl = document.querySelector('body');
+const cardWrapperEl = document.querySelector('.card-wrapper');
 
 const team = [
     {
@@ -38,17 +38,17 @@ for (let i = 0; i < team.length; i++) {
     const name = teamMember.name;
     const role = teamMember.role;
     const image = teamMember.image;
-    
-    bodyEl.innerHTML += createCard(name, role, image);
+
+    const div = document.createElement('div');
+    div.classList.add('col');
+    div.innerHTML = createCard(name, role, image);
+    cardWrapperEl.append(div);
 }
 
 function createCard(name, role, image) {
-    const card = `
-    <div class="card">
+    return `<div class="card">
         <img src="./img/${image}" alt="foto di ${name}">
         <h2>${name}</h2>
         <p>${role}</p>
-    </div>
-    `;
-    return card;
+    </div>`;
 }
