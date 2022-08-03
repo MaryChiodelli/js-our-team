@@ -1,3 +1,5 @@
+const bodyEl = document.querySelector('body');
+
 const team = [
     {
         name: 'Wayne Barnett',
@@ -37,7 +39,5 @@ for (let i = 0; i < team.length; i++) {
     const role = teamMember.role;
     const image = teamMember.image;
 
-    console.log(name, role, image);
+    bodyEl.innerHTML += `<p>${name} ${role} ${image}</p>`;
 }
-
-// console.log(team);
