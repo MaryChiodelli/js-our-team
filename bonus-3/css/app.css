@@ -11,20 +11,42 @@ img {
 
 html {
     font-family: 'Roboto', sans-serif;
+    line-height: 1.8em;
 }
 
 body {
     background-color: #F5F5F1;;
 }
 
+main {
+    padding: 5rem 0 2rem 0;
+}
+
+h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    margin-bottom: 1.5rem;
+}
+
 h2 {
     font-family: 'Lora', serif;
+    padding-top: 1.5rem;
+    line-height: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .container {
     max-width: 1200px;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     margin: 0 auto;
+}
+
+.container.header-wrapper {
+    text-align: center;
+    max-width: 800px;
+    padding-bottom: 3rem;
 }
 
 .row {
@@ -41,4 +63,16 @@ h2 {
 .card {
     background-color: white;
     text-align: center;
+}
+
+.card img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.card p {
+    padding-bottom: 1.5rem;
 }
