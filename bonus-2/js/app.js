@@ -38,7 +38,17 @@ for (let i = 0; i < team.length; i++) {
     const name = teamMember.name;
     const role = teamMember.role;
     const image = teamMember.image;
-    const img = `<img src="./img/${image}" alt="">`;
+    
+    bodyEl.innerHTML += createCard(name, role, image);
+}
 
-    bodyEl.innerHTML += `<p>${name} ${role} ${img}</p>`;
+function createCard(name, role, image) {
+    const card = `
+    <div class="card">
+        <img src="./img/${image}" alt="foto di ${name}">
+        <h2>${name}</h2>
+        <p>${role}</p>
+    </div>
+    `;
+    return card;
 }
