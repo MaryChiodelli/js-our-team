@@ -38,6 +38,7 @@ for (let i = 0; i < team.length; i++) {
     const name = teamMember.name;
     const role = teamMember.role;
     const image = teamMember.image;
+    const img = `<img src="./img/${image}" alt="">`;
 
-    bodyEl.innerHTML += `<p>${name} ${role} ${image}</p>`;
+    bodyEl.innerHTML += `<p>${name} ${role} ${img}</p>`;
 }
